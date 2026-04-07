@@ -1,0 +1,43 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <p>© {year} <span>Sudhakar Chaulagain</span></p>
+  <p class="sub">Built with Astro · Deployed via Vercel</p>
+  <p>Hammond, Louisiana · <span>Open to opportunities</span></p>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+  p span {
+    color: var(--amber);
+  }
+  .sub {
+    color: var(--muted);
+    opacity: 0.6;
+  }
+
+  @media (max-width: 900px) {
+    footer {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  }
+</style>

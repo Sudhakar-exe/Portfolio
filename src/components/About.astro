@@ -1,0 +1,201 @@
+---
+
+---
+
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img
+            src="/images/sudhakar.jpeg"
+            alt="Sudhakar Chaulagain"
+            loading="lazy"
+          />
+        </div>
+        <div class="photo-label">Sudhakar Chaulagain</div>
+        <div class="photo-sub">CS Junior · Security &amp; Software</div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <p>
+          I'm a <strong>junior Computer Science student</strong> at Southeastern Louisiana
+          University with dual concentrations in <strong>cybersecurity</strong> and
+          <strong>software engineering</strong>. Originally from Nepal, I've
+          been building things that sit at the intersection of security and
+          software — from SAST tools that catch vulnerabilities at the code
+          level to IoT health monitors that stream real sensor data to
+          dashboards.
+        </p>
+        <p style="margin-top:1.25rem;">
+          When I'm not writing detectors or competing in CTFs, I'm training the
+          next generation — I taught Arduino and Raspberry Pi workshops through
+          the <strong>Robotics Association of Nepal</strong>, reaching students
+          who had never touched a microcontroller before.
+        </p>
+        <div class="about-detail">
+          $ cat education.txt<br />
+          Southeastern Louisiana University<br />
+          B.S. Computer Science · GPA 3.86<br />
+          Expected: December 2027<br />
+          Focus: Cybersecurity + Software Engineering
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="info-card reveal reveal-delay-1">
+          <div class="info-card-label">Current Role</div>
+          <div class="info-card-value">Lab Support Technician</div>
+          <div class="info-card-sub">
+            Dept. of Industrial &amp; Engineering Technology · SLU
+          </div>
+        </div>
+        <div class="info-card reveal reveal-delay-2">
+          <div class="info-card-label">Honors</div>
+          <div class="info-card-value">UPE Honor Society</div>
+          <div class="info-card-sub">President's List · 3.86 GPA</div>
+        </div>
+        <div class="info-card reveal reveal-delay-3">
+          <div class="info-card-label">Location</div>
+          <div class="info-card-value">Hammond, Louisiana</div>
+          <div class="info-card-sub">Roots in Nepal · Open to relocation</div>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-card-label">Focus Areas</div>
+          <div class="info-card-value">Security Engineering</div>
+          <div class="info-card-sub">
+            SAST · Embedded Systems · Full-Stack Development
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  /* Profile photo */
+  .about-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo-frame {
+    width: 220px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 2px solid var(--border);
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  .photo-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(232, 160, 32, 0.15);
+    border-radius: 3px;
+    pointer-events: none;
+  }
+  .photo-frame:hover {
+    border-color: rgba(232, 160, 32, 0.4);
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-label {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+  .photo-sub {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--amber);
+    letter-spacing: 0.1em;
+    margin-top: 0.35rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .about-text strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+  .about-detail {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--amber);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.9;
+  }
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    transition: border-color 0.3s;
+  }
+  .info-card:hover {
+    border-color: rgba(232, 160, 32, 0.3);
+  }
+  .info-card-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--amber);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .info-card-value {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .info-card-sub {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+  @media (max-width: 1024px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .about-photo {
+      align-items: center;
+    }
+    .photo-frame {
+      width: 180px;
+      height: 230px;
+    }
+  }
+</style>
