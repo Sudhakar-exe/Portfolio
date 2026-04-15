@@ -1,286 +1,99 @@
+---
+---
 <section id="projects">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Projects</h2>
-      <div class="section-line"></div>
+  <h2 class="fade-in">Projects</h2>
+
+  <div class="project fade-in">
+    <div class="project-header">
+      <h3>AI DevSec Platform</h3>
+      <span class="date">2026 - present</span>
     </div>
-    <div class="projects-grid">
-      <!-- PROJECT 01: AI DevSec Platform — FEATURED -->
-      <div class="project-card featured reveal">
-        <div class="project-num">01</div>
-        <div class="project-tag-row">
-          <span class="tag tag-amber">Featured</span>
-          <span class="tag tag-green">Active</span>
-          <span class="tag tag-muted">Security Tool</span>
-        </div>
-        <h3 class="project-title">AI DevSec Platform</h3>
-        <p class="project-desc">
-          A production-grade Static Application Security Testing (SAST) platform
-          built with Python and FastAPI. Scans source code and git diffs for 10
-          vulnerability classes — SQL injection, hardcoded secrets, path
-          traversal, command injection, and more. Ships with a standalone React
-          frontend featuring color-coded risk scoring, plus an 11-chapter
-          reference document covering the entire architecture.
-        </p>
-        <div class="project-meta">
-          <span><span class="dot"></span> 10 Security Detectors</span>
-          <span><span class="dot"></span> 42 Test Cases</span>
-          <span><span class="dot"></span> FastAPI + React</span>
-          <span><span class="dot"></span> Git Diff Analysis</span>
-        </div>
-        <div class="project-links">
-          <a
-            href="https://github.com/Sudhakar-exe/ai-devsec-platform"
-            target="_blank"
-            class="proj-link">GitHub →</a
-          >
-        </div>
-      </div>
+    <p class="stack">Python, FastAPI, React, Pytest</p>
+    <p>
+      Static application security testing tool that scans source code and git diffs for 10 vulnerability classes including SQL injection, hardcoded secrets, and path traversal. 42 test cases and color-coded risk scoring frontend.
+    </p>
+    <a href="https://github.com/Sudhakar-exe/ai-devsec-platform" target="_blank" class="project-link">View on GitHub →</a>
+  </div>
 
-      <!-- PROJECT 02: AI Health Monitoring System -->
-      <div class="project-card secondary reveal reveal-delay-1">
-        <div class="project-num">02</div>
-        <div class="project-tag-row">
-          <span class="tag tag-blue">Hardware</span>
-          <span class="tag tag-muted">IoT + AI</span>
-        </div>
-        <h3 class="project-title">AI Health Monitoring System</h3>
-        <p class="project-desc">
-          Hardware project integrating Raspberry Pi and Arduino with LM35
-          temperature and MAX30102 heart-rate/SpO2 sensors. Streams live patient
-          vitals to a Flask dashboard with Chart.js visualizations, persists
-          data in SQLite, and uses the Anthropic API for AI-powered health
-          insights and recovery analysis.
-        </p>
-        <div class="project-meta">
-          <span><span class="dot"></span> Raspberry Pi + Arduino</span>
-          <span><span class="dot"></span> Claude API</span>
-          <span><span class="dot"></span> Flask + Chart.js</span>
-        </div>
-        <div class="project-links">
-          <a
-            href="https://github.com/Sudhakar-exe"
-            target="_blank"
-            class="proj-link">GitHub →</a
-          >
-        </div>
-      </div>
-
-      <!-- PROJECT 03: Task & Time Management Web App -->
-      <div class="project-card secondary reveal">
-        <div class="project-num">03</div>
-        <div class="project-tag-row">
-          <span class="tag tag-blue">SWE Class</span>
-          <span class="tag tag-muted">Full-Stack</span>
-        </div>
-        <h3 class="project-title">Task & Time Management App</h3>
-        <!-- ▼ ADD YOUR TEAM/PROFESSOR PHOTO HERE ▼ -->
-        <div class="project-image-slot">
-          <img
-            src="/images/swe-team.jpg"
-            alt="SWE class team with professor"
-            loading="lazy"
-          />
-        </div>
-        <p class="project-desc">
-          Led a 4-member Agile team to ship a full-stack task management
-          platform with role-based access control, authenticated REST APIs in
-          C#/.NET, and a responsive React/TypeScript frontend. Managed sprint
-          planning, Git collaboration, and documentation.
-        </p>
-        <div class="project-meta">
-          <span><span class="dot"></span> C# / .NET</span>
-          <span><span class="dot"></span> React + TypeScript</span>
-          <span><span class="dot"></span> OAuth / JWT</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 04: CTF Competition Portfolio -->
-      <div class="project-card small reveal reveal-delay-1">
-        <div class="project-num">04</div>
-        <div class="project-tag-row">
-          <span class="tag tag-amber">Competition</span>
-          <span class="tag tag-muted">Offensive Security</span>
-        </div>
-        <h3 class="project-title">CTF Competition Portfolio</h3>
-        <p class="project-desc">
-          Active TryHackMe and competition participant — pentesting scenarios,
-          Windows event log forensics, cryptographic challenges, and
-          steganography. 1st at Tulane Cyber Challenge, 11th nationally at DOE
-          Cyberforce out of 96 teams.
-        </p>
-        <div class="project-meta">
-          <span><span class="dot"></span> Penetration Testing</span>
-          <span><span class="dot"></span> Forensics</span>
-          <span><span class="dot"></span> Cryptography</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 05: Paobucks Android App -->
-      <div class="project-card small reveal reveal-delay-2">
-        <div class="project-num">05</div>
-        <div class="project-tag-row">
-          <span class="tag tag-muted">Mobile</span>
-        </div>
-        <h3 class="project-title">Paobucks — Coffee Ordering App</h3>
-        <p class="project-desc">
-          Native Android app built in Kotlin with dynamic pricing, order state
-          management, and scalable menu rendering using RecyclerView and
-          CardView. Clean separation of UI and business logic layers.
-        </p>
-        <div class="project-meta">
-          <span><span class="dot"></span> Kotlin</span>
-          <span><span class="dot"></span> Android SDK</span>
-        </div>
-      </div>
+  <div class="project fade-in">
+    <div class="project-header">
+      <h3>AI Health Monitoring System</h3>
+      <span class="date">2026</span>
     </div>
+    <p class="stack">Raspberry Pi, Arduino, Flask, Chart.js, Claude API</p>
+    <p>
+      Hardware project with LM35 and MAX30102 sensors streaming live vitals to a Flask dashboard. Persists data in SQLite and uses the Anthropic API for health insights. Built with a team of 3.
+    </p>
+  </div>
+
+  <div class="project fade-in">
+    <div class="project-header">
+      <h3>Task & Time Management App</h3>
+      <span class="date">Spring 2025</span>
+    </div>
+    <p class="stack">C#, .NET, React, TypeScript, OAuth, JWT</p>
+    <p>
+      Led a 4-member Agile team in our SWE class to build a full-stack task platform with role-based access control and authenticated REST APIs. Managed sprint planning, Git collaboration, and documentation.
+    </p>
+    <div class="project-photo">
+      <img src="/images/swe-team.jpg" alt="SWE class team with professor" loading="lazy" />
+      <span class="caption">Our team with our professor</span>
+    </div>
+  </div>
+
+  <div class="project fade-in">
+    <div class="project-header">
+      <h3>Paobucks - Coffee Ordering App</h3>
+      <span class="date">Fall 2025</span>
+    </div>
+    <p class="stack">Kotlin, Android SDK</p>
+    <p>
+      Native Android app with dynamic pricing, order state management, and scalable menu rendering. Clean separation of UI and business logic.
+    </p>
+  </div>
+
+  <div class="project fade-in">
+    <div class="project-header">
+      <h3>CTF Competitions</h3>
+      <span class="date">2024 - present</span>
+    </div>
+    <p class="stack">Wireshark, Nmap, TryHackMe, forensics tools</p>
+    <p>
+      Ongoing work in penetration testing, Windows event log forensics, steganography, and cryptographic challenges across TryHackMe and national competitions.
+    </p>
   </div>
 </section>
 
 <style>
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
+  .project {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
   }
-  .project-card {
-    background: var(--surface);
+  .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .project-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 0.3rem; gap: 1rem;
+  }
+  .project-header h3 { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; }
+  .date { font-family: var(--mono); font-size: 0.75rem; color: var(--light); white-space: nowrap; }
+  .stack { font-family: var(--mono); font-size: 0.75rem; color: var(--light); margin-bottom: 0.65rem; }
+  .project p:not(.stack) { color: var(--muted); line-height: 1.75; }
+  .project-link {
+    display: inline-block; margin-top: 0.75rem; font-size: 0.82rem;
+    color: var(--text); text-decoration: none;
+    border-bottom: 1px solid var(--border); transition: border-color 0.15s;
+  }
+  .project-link:hover { border-color: var(--text); opacity: 1; }
+  .project-photo { margin-top: 1.25rem; overflow: hidden; border-radius: 3px; display: inline-block; }
+  .project-photo img {
+    width: 100%; max-width: 560px; border-radius: 3px;
     border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    transition:
-      border-color 0.3s,
-      transform 0.3s;
-    cursor: default;
+    transition: transform 0.4s ease;
   }
-  .project-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(232, 160, 32, 0.04), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .project-card:hover {
-    border-color: rgba(232, 160, 32, 0.35);
-    transform: translateY(-3px);
-  }
-  .project-card:hover::after {
-    opacity: 1;
-  }
-  .project-card.featured {
-    grid-column: span 7;
-    background: var(--surface2);
-    border-color: rgba(232, 160, 32, 0.2);
-  }
-  .project-card.secondary {
-    grid-column: span 5;
-  }
-  .project-card.small {
-    grid-column: span 4;
-  }
-  .project-tag-row {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.25rem;
-  }
-  .project-num {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.75rem;
-    font-family: var(--serif);
-    font-size: 4rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.03);
-    line-height: 1;
-    pointer-events: none;
-  }
-  h3.project-title {
-    font-family: var(--serif);
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.01em;
-  }
-  .project-card.featured h3.project-title {
-    font-size: 2rem;
-  }
-  .project-desc {
-    font-size: 0.9rem;
-    color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-  }
-  .project-meta {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    color: var(--muted);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-  .project-meta .dot {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background: var(--amber);
-    border-radius: 50%;
-    margin-right: 0.4rem;
-    vertical-align: middle;
-  }
-  .project-links {
-    display: flex;
-    gap: 1rem;
-    position: relative;
-    z-index: 1;
-  }
-  .proj-link {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    color: var(--amber);
-    text-decoration: none;
-    letter-spacing: 0.08em;
-    transition: opacity 0.2s;
-  }
-  .proj-link:hover {
-    opacity: 0.7;
-  }
-
-  /* Project image slot for team/competition photos */
-  .project-image-slot {
-    width: 100%;
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border: 1px solid var(--border);
-    aspect-ratio: 16 / 9;
-    background: var(--surface2);
-  }
-  .project-image-slot img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
-  }
-  .project-card:hover .project-image-slot img {
-    transform: scale(1.03);
-  }
-
-  @media (max-width: 1024px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-    .project-card.featured,
-    .project-card.secondary,
-    .project-card.small {
-      grid-column: span 1;
-    }
+  .project-photo img:hover { transform: scale(1.02); }
+  .caption { display: block; font-size: 0.75rem; color: var(--light); margin-top: 0.5rem; }
+  @media (max-width: 640px) {
+    .project-header { flex-direction: column; gap: 0.15rem; }
   }
 </style>

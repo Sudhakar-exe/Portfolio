@@ -1,242 +1,47 @@
 ---
-
 ---
-
 <section id="achievements">
-  <div class="section-wrap">
-    <div class="section-header reveal">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Wins</h2>
-      <div class="section-line"></div>
-    </div>
+  <h2 class="fade-in">Competitions</h2>
 
-    <!-- ── PHOTO GALLERY — Competition & Team Photos ── -->
-    <div class="photos-row reveal">
-      <!-- ▼ REPLACE these src paths with your actual photos ▼ -->
-      <div class="photo-card">
-        <img
-          src="/images/cyberforce-team.jpg"
-          alt="DOE Cyberforce Competition team"
-          loading="lazy"
-        />
-        <div class="photo-caption">
-          DOE Cyberforce Competition — 11th / 96 Nationally
-        </div>
-      </div>
-      <div class="photo-card">
-        <img
-          src="/images/tulane-cyber.jpg"
-          alt="Tulane Cyber Challenge 1st place"
-          loading="lazy"
-        />
-        <div class="photo-caption">
-          Tulane / Operation Spark Cyber Challenge — 1st Place
-        </div>
-      </div>
-    </div>
-
-    <div class="ach-grid">
-      <div class="ach-card gold reveal">
-        <div class="ach-bg">1</div>
-        <div class="ach-place">1<small>st</small></div>
-        <div class="ach-title">Tulane / Operation Spark Cyber Challenge</div>
-        <div class="ach-org">Cybersecurity Competition · 2024–2025</div>
-      </div>
-      <div class="ach-card silver reveal reveal-delay-1">
-        <div class="ach-bg">11</div>
-        <div class="ach-place">11<small>th</small></div>
-        <div class="ach-title">DOE Cyberforce Competition</div>
-        <div class="ach-org">National · 96 Teams Competed</div>
-      </div>
-      <div class="ach-card blue reveal reveal-delay-2">
-        <div class="ach-bg">&Sigma;</div>
-        <div class="ach-place" style="font-size:2.2rem">UPE</div>
-        <div class="ach-title">Upsilon Pi Epsilon Honor Society</div>
-        <div class="ach-org">CS International Honor Society</div>
-      </div>
-      <div class="ach-card blue ach-wide reveal reveal-delay-3">
-        <div class="ach-wide-inner">
-          <div>
-            <div class="ach-place" style="font-size:2rem">President's List</div>
-            <div class="ach-title">Southeastern Louisiana University</div>
-            <div class="ach-org">GPA 3.86 · Multiple Semesters</div>
-          </div>
-          <div class="ach-extra-tags">
-            <div class="ach-extra-label">ALSO PURSUING</div>
-            <div class="ach-extra-pills">
-              <span class="tag tag-amber">Robotics Education · Nepal</span>
-              <span class="tag tag-muted">AWS CLF-C02 Track</span>
-              <span class="tag tag-muted">CompTIA Security+</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="photos fade-in">
+    <figure>
+      <img src="/images/cyberforce-team.jpg" alt="DOE Cyberforce Competition" loading="lazy" />
+      <figcaption>DOE Cyberforce - 11th / 96 nationally</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/tulane-cyber.jpg" alt="Tulane Cyber Challenge" loading="lazy" />
+      <figcaption>Tulane Cyber Challenge - 1st place</figcaption>
+    </figure>
   </div>
+
+  <ul class="wins fade-in d1">
+    <li><strong>1st Place</strong> - Tulane / Operation Spark Cyber Challenge, 2024, 2025</li>
+    <li><strong>11th / 96 Teams Nationally</strong> - DOE Cyberforce Competition, Nov 2025</li>
+    <li><strong>UPE Honor Society</strong> - CS International Honor Society</li>
+    <li><strong>President's List</strong> - Southeastern Louisiana University, multiple semesters</li>
+    <li><strong>Runner-Up</strong> - SLU Integration Bee, Math Department</li>
+  </ul>
 </section>
 
 <style>
-  /* ── Photo Gallery ── */
-  .photos-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 4rem;
+  .photos {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1.25rem; margin-bottom: 2rem;
   }
-  .photo-card {
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    transition:
-      border-color 0.3s,
-      transform 0.3s;
+  .photos figure { margin: 0; overflow: hidden; border-radius: 3px; }
+  .photos img {
+    width: 100%; aspect-ratio: 16 / 10; object-fit: cover;
+    border-radius: 3px; border: 1px solid var(--border);
+    transition: transform 0.4s ease;
   }
-  .photo-card:hover {
-    border-color: rgba(232, 160, 32, 0.35);
-    transform: translateY(-3px);
+  .photos figure:hover img { transform: scale(1.03); }
+  .photos figcaption { font-size: 0.75rem; color: var(--light); margin-top: 0.5rem; }
+  .wins { list-style: none; padding: 0; }
+  .wins li {
+    padding: 0.6rem 0; border-bottom: 1px solid var(--border);
+    font-size: 0.9rem; color: var(--muted); line-height: 1.5;
   }
-  .photo-card img {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s;
-  }
-  .photo-card:hover img {
-    transform: scale(1.04);
-  }
-  .photo-caption {
-    padding: 0.85rem 1rem;
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    border-top: 1px solid var(--border);
-  }
-
-  /* ── Achievement Cards ── */
-  .ach-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  .ach-card {
-    position: relative;
-    border: 1px solid var(--border);
-    padding: 2.5rem 2rem;
-    overflow: hidden;
-    transition:
-      border-color 0.3s,
-      transform 0.3s;
-  }
-  .ach-card:hover {
-    transform: translateY(-3px);
-  }
-  .ach-card.gold {
-    background: linear-gradient(
-      135deg,
-      rgba(232, 160, 32, 0.08),
-      var(--surface)
-    );
-    border-color: rgba(232, 160, 32, 0.25);
-  }
-  .ach-card.gold:hover {
-    border-color: var(--amber);
-  }
-  .ach-card.silver {
-    background: linear-gradient(
-      135deg,
-      rgba(148, 163, 184, 0.06),
-      var(--surface)
-    );
-    border-color: rgba(148, 163, 184, 0.15);
-  }
-  .ach-card.silver:hover {
-    border-color: rgba(148, 163, 184, 0.4);
-  }
-  .ach-card.blue {
-    background: linear-gradient(
-      135deg,
-      rgba(96, 165, 250, 0.05),
-      var(--surface)
-    );
-    border-color: rgba(96, 165, 250, 0.12);
-  }
-  .ach-card.blue:hover {
-    border-color: rgba(96, 165, 250, 0.35);
-  }
-  .ach-bg {
-    position: absolute;
-    top: -0.5rem;
-    right: 0.5rem;
-    font-family: var(--serif);
-    font-size: 7rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.02);
-    line-height: 1;
-    pointer-events: none;
-  }
-  .ach-place {
-    font-family: var(--serif);
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-  .ach-place small {
-    font-size: 0.45em;
-    vertical-align: super;
-  }
-  .ach-title {
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 0.35rem;
-  }
-  .ach-org {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-  }
-  .ach-wide {
-    grid-column: span 3;
-  }
-  .ach-wide-inner {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  .ach-extra-tags {
-    margin-left: auto;
-    text-align: right;
-  }
-  .ach-extra-label {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-  }
-  .ach-extra-pills {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  @media (max-width: 1024px) {
-    .photos-row {
-      grid-template-columns: 1fr;
-    }
-    .ach-grid {
-      grid-template-columns: 1fr;
-    }
-    .ach-wide {
-      grid-column: span 1;
-    }
-  }
+  .wins li:last-child { border-bottom: none; }
+  .wins strong { color: var(--text); font-weight: 500; }
+  @media (max-width: 640px) { .photos { grid-template-columns: 1fr; } }
 </style>
